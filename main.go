@@ -58,7 +58,7 @@ func updateItem(w http.ResponseWriter, r *http.Request) {
         http.Error(w, "Bad Request", http.StatusBadRequest)
         return
     }
-
+//check
     mu.Lock()
     _, exists := store[id]
     if !exists {
